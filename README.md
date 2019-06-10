@@ -22,10 +22,12 @@ There is a bunch of functions helping to maintain the set of instances, see ‘n
 
 You can set up the package like this:
 
-    (require 'nii)
-    (global-set-key (kbd "M-a") #'nii-forward-instance)
-    (global-set-key (kbd "M-e") #'nii-backward-instance)
-    (global-set-key (kbd "C-x M-a") #'nii-maintain-instances)
+```elisp
+(require 'nii)
+(global-set-key (kbd "M-a") #'nii-forward-instance)
+(global-set-key (kbd "M-e") #'nii-backward-instance)
+(global-set-key (kbd "C-x M-a") #'nii-maintain-instances)
+```
 
 nii is written with the use of a completion framework (such as ido, ivy or helm) in mind,
 so it could be less convenient to choose an instance without such a framework.
